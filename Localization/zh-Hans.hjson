@@ -1,0 +1,21 @@
+Mods: {
+	OdetteCharacter: {
+		AppearanceConflict: 沃雅妮莎正在启用，奥黛塔外观暂时让位。请停用 Vodyanitsa 模组或关闭它的启用选项，再使用奥黛塔。你的设置没有被自动修改。
+
+		Configs: {
+			OdetteCharacterConfig: {
+				DisplayName: 奥黛塔角色外观
+
+				Enabled: {
+					Label: 启用奥黛塔
+					Tooltip: 在本客户端将所有玩家显示为奥黛塔。保留装备效果、操作、物理运动和存档外貌。请停用沃雅妮莎，避免两个自动外观同时生效。
+				}
+
+				GentleExpression: {
+					Label: 温柔表情
+					Tooltip: 开启使用温柔表情，关闭使用严肃表情。立即应用于角色与头像。
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+OdetteCharacter asset interface (UTF-8 JSON, case-insensitive properties)
+
+Assets/Character/Serious.png: twelve transparent full-character poses.
+Assets/Character/Gentle.png: the same twelve poses, gentle expression.
+Assets/Character/Arms.png: isolated near-arm straight and bent poses.
+Assets/Character/PortraitSerious.png: head crop from serious idle artwork.
+Assets/Character/PortraitGentle.png: head crop from gentle idle artwork.
+Assets/Character/atlas.json:
+{
+  "seriousFrames": [ twelve frame objects ],
+  "gentleFrames": [ twelve frame objects ],
+  "armFrames": [ straightArm, bentArm ],
+  "portraitSerious": { serious head crop frame },
+  "portraitGentle": { gentle head crop frame }
+}
+
+Body frame order for EACH expression:
+0 idle, 1 walk1, 2 walk2, 3 walk3, 4 walk4, 5 jump, 6 fall, 7 sit,
+8 ballet preparation, 9 plie, 10 releve, 11 arabesque.
+Each expression owns independent rectangles and anchor coordinates; dimensions
+and crops need not be identical. Default serious, live client config switch.
+
+Every frame: x,y,width,height,anchorX,anchorY,scale.
+Body frames additionally: shoulderX,shoulderY,showRestArm.
+Arm frames additionally: handX,handY.
+Rectangle coordinates and dimensions are integer texture pixels. All anchor,
+shoulder and hand coordinates are relative to that source rectangle. Scale
+converts source pixels to world pixels. Anchor/shoulder/hand may be fractional.
+
+Body faces right at rest. Anchor is the actual foot contact point, placed at
+Player.Bottom (no native sheet +4 padding). Aim for 52-58 world pixels tall;
+keep consistent physical character size, including raised ballet poses.
+First eight poses should tuck the near arm behind the torso. showRestArm=true
+draws the separate foreground arm. Last four ballet poses contain complete
+arms and set showRestArm=false. Input/visible held items immediately select a
+normal pose and the rigged near arm, so baked ballet arms never hold weapons.
+
+Arm sprites point downward. Anchor is shoulder attachment, hand is actual palm
+grip center. Use exactly two frames: straight relaxed, bent holding. Runtime
+rotation and bounded uniform scale align the palm to native item handles.
+
+Portrait frames refer to their own Portrait*.png. Anchor is head center,
+typically 20-24 world pixels high. Include hair and side bun, exclude torso.
+No white/checkerboard/matte background. Runtime normalizes the known rawimg
+straight-alpha upload once; retain unmodified source PNGs and their alpha.
+
+Names in frame objects are optional descriptive metadata, ignored by runtime.
+The same metadata contract supports arbitrary atlas layout; no equal-grid
+assumption is made by the renderer.

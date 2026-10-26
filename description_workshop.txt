@@ -1,0 +1,19 @@
+奥黛塔 · 自动玩家外观
+
+启用后自动显示为奥黛塔，无需时装、饰品或指令。冰蓝短发、侧发髻、紫眼、深蓝舞衣、白羽芭蕾裙与金色足尖鞋；严肃与温柔表情可在客户端配置中即时切换。
+
+每种表情12姿势，包含足尖行走、跳跃、下落、坐姿和4个闲置芭蕾姿势。站稳5秒后起舞，移动或动作输入立即取消。纯外观，不改变属性、控制、碰撞、呼吸或装备效果，不增加游泳能力，也不覆盖存档外貌。
+
+与 Vodyanitsa 同时启用且其 Enabled=true 时，本模组主动让位，沃雅妮莎优先。使用奥黛塔时停用 Vodyanitsa 或关闭其 Enabled 配置。旧 OdetteVanity 可继续保留，不是本模组依赖。
+
+非官方同人制作，角色图集使用 AI 辅助生成。原创贡献按 MIT 开源；角色及第三方既有知识产权归原权利人。未实测真实双客户端联机，不保证所有第三方外观层兼容。
+源码：https://github.com/ifgifg/OdetteCharacter
+
+OdetteCharacter — automatic player appearance
+
+No equipment or commands required. Choose serious or gentle expressions in the client config. Each expression includes 12 poses: pointed-foot walking, jumping, falling, sitting and four idle ballet poses. Ballet begins after five stationary seconds and stops immediately on movement or action input.
+
+Cosmetic only: no changes to stats, controls, collision, breathing, equipment effects or saved appearance. No extra swimming ability. If Vodyanitsa and its Enabled setting are active, Odette yields to it; disable Vodyanitsa or that setting to display Odette. The older OdetteVanity mod can remain installed but is not required.
+
+Unofficial fan-made project with AI-assisted character artwork. Original contributions are MIT-licensed; underlying character and other third-party rights remain with their owners. Real two-client multiplayer has not been tested, and other mods' custom player visuals may be hidden.
+Source: https://github.com/ifgifg/OdetteCharacter

@@ -1,0 +1,6 @@
+displayName = Odette Character · 奥黛塔
+author = Local Character Studio
+version = 1.0.0
+side = Both
+sortAfter = Vodyanitsa
+buildIgnore = *.csproj, *.ps1, README*, ASSET-CONTRACT*, Art/*, Tools/*, bin/*, obj/*, docs/*, icon_workshop.png

@@ -1,0 +1,21 @@
+Mods: {
+	OdetteCharacter: {
+		AppearanceConflict: Odette appearance is paused while Vodyanitsa is enabled. Disable Vodyanitsa or its Enabled setting to use Odette. Your settings have not been changed.
+
+		Configs: {
+			OdetteCharacterConfig: {
+				DisplayName: Odette appearance
+
+				Enabled: {
+					Label: Enable Odette
+					Tooltip: Display all players as Odette on this client. Equipment effects, controls, physics and saved character appearance are unchanged. Vodyanitsa must be disabled to avoid two competing automatic appearances.
+				}
+
+				GentleExpression: {
+					Label: Gentle expression
+					Tooltip: Use the gentle expression. Turn off for the serious expression. Applies immediately to the character and head portrait.
+				}
+			}
+		}
+	}
+}

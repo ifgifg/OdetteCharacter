@@ -1,0 +1,3 @@
+自动将玩家外观替换为奥黛塔：冰蓝短发、侧发髻、紫眼、深蓝舞衣、白羽芭蕾裙与金色足尖鞋。保留严肃与温柔两种表情，并带有足尖行走、跳跃、下落、坐姿和闲置芭蕾动作。纯外观，不改变玩家属性、操作、装备效果或碰撞。
+
+Automatically replaces player appearance with Odette, with serious and gentle expressions and cosmetic ballet poses. Equipment stats, movement, controls, collision and saved appearance remain unchanged.
